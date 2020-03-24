@@ -1,3 +1,26 @@
+/* global style */
+:root {
+	--primary-color: rgb(206, 179, 30);
+	--primary-transition: all 0.5s ease;
+}
 .top-info {
 	padding: 0.2rem 2rem;
+}
+.info {
+	cursor: pointer;
+	transition: var(--primary-transition);
+}
+.top-contact {
+	padding-left: 0.5rem;
+}
+.top-social {
+	padding-left: 0.5rem;
+	font-size: 1.3rem;
+	color: white;
+	transition: var(--primary-transition);
+}
+.info:hover,
+.top-social:hover {
+	color: var(--primary-color);
+	transform: scale(1.1);
 }
