@@ -1,0 +1,25 @@
+{
+  "name": "joliebj",
+  "version": "1.0.0",
+  "description": "jolie bijoux",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kindeme/jba.git"
+  },
+  "author": "kindeme kounoudji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kindeme/jba/issues"
+  },
+  "homepage": "https://github.com/kindeme/jba#readme"
+}

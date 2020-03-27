@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
   <!-- bootstrap style -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/08da899835.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
 <body data-spy="scroll" data-target="#navbarResponsive">
   <header>
     <!-- top info -->
-    <div class="container-fluid bg-dark text-white  top-fixed top-info text-md-center">
+    <div class="container-fluid bg-dark text-white top-fixed text-md-center">
       <div class="row">
         <div class="col-md-4">
           <h6 class="info"> <i class="fas fa-phone-alt"></i> <span class="top-contact">+ 228-</span></h6>
@@ -66,15 +66,15 @@
       </nav>
       <!-- image slider -->
       <div id="carouselIndicator" class="carousel slide" data-ride="carousel" data-interval="5000">
-        
+
         <div class="carousel-inner" role="listbox">
           <!-- slide 1 -->
           <div class="carousel-inner active" style="background-image: url(image/hero-1.jpg);">
 
           </div>
 
-        </div> 
-         <!-- end carousel-inner -->
+        </div>
+        <!-- end carousel-inner -->
       </div>
       <!-- end image slider -->
     </div>
@@ -83,10 +83,11 @@
 
     <!-- end home section -->
   </header>
+  <script>src = "node_modules/jquery/dist/jquery.min.js"</script>
+  <script>src = "node_modules/popper.js/dist/umd/popper.min.js"</script>
+  <script>src = "node_modules/bootstrap/dist/bootstrap.min.js"</script>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 
