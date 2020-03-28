@@ -1,13 +1,6 @@
 /* global style */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 body {
-  overflow-x: hidden;
-  font-family: "Lato", sans-serif;
-  color: #505962; }
-
-:root {
-  --primary-color: rgb(206, 179, 30);
-  --primary-transition: all 0.5s ease; }
+  box-sizing: border-box; }
 
 .top-info {
   padding: 0.2rem 2rem; }
@@ -30,8 +23,9 @@ body {
   color: var(--primary-color);
   transform: scale(1.1); }
 
-.navbar-brand img {
-  height: 2rem; }
+.logo {
+  width: 10rem;
+  height: 5rem; }
 
 .navbar-nav li {
   padding-right: 0.7rem; }
@@ -51,3 +45,6 @@ body {
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   background: rgba(0, 0, 0, 0.5) !important; }
+
+.carousel-inner {
+  height: 100vh; }
