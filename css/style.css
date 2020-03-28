@@ -1,57 +1,53 @@
 /* global style */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 body {
-	overflow-x: hidden;
-	font-family: "Lato", sans-serif;
-	color: #505962;
-}
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #505962; }
+
 :root {
-	--primary-color: rgb(206, 179, 30);
-	--primary-transition: all 0.5s ease;
-}
+  --primary-color: rgb(206, 179, 30);
+  --primary-transition: all 0.5s ease; }
+
 .top-info {
-	padding: 0.2rem 2rem;
-}
+  padding: 0.2rem 2rem; }
+
 .info {
-	cursor: pointer;
-	transition: var(--primary-transition);
-}
+  cursor: pointer;
+  transition: var(--primary-transition); }
+
 .top-contact {
-	padding-left: 0.5rem;
-}
+  padding-left: 0.5rem; }
+
 .top-social {
-	padding-left: 0.5rem;
-	font-size: 1.3rem;
-	color: white;
-	transition: var(--primary-transition);
-}
+  padding-left: 0.5rem;
+  font-size: 1.3rem;
+  color: white;
+  transition: var(--primary-transition); }
+
 .info:hover,
 .top-social:hover {
-	color: var(--primary-color);
-	transform: scale(1.1);
-}
+  color: var(--primary-color);
+  transform: scale(1.1); }
 
 .navbar-brand img {
-	height: 2rem;
-}
+  height: 2rem; }
+
 .navbar-nav li {
-	padding-right: 0.7rem;
-}
+  padding-right: 0.7rem; }
+
 .navbar-dark .navbar-nav .navbar-link {
-	color: white;
-	padding-top: 0.8rem;
-}
+  color: white;
+  padding-top: 0.8rem; }
 
 .nav-link.active,
 .nav-link:hover {
-	color: rgb(206, 179, 30);
-}
+  color: #ceb31e; }
 
 /* navbar */
 .navbar {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 0.9rem;
-	letter-spacing: 0.1rem;
-	background: rgba(0, 0, 0, 0.5) !important;
-}
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.5) !important; }
