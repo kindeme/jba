@@ -1,62 +1,173 @@
 /* global style */
 
-$primary-color: rgb(206, 179, 30);
+$primary-color: #d3a621;
 $primary-transition: all 0.5s ease;
 $title-font: "Lato", sans-serif;
 $body-font: "Poppins", sans-serif;
+$spacing: 0.1rem;
+@mixin smallquery($media) {
+	@media screen and (max-width: $media) {
+		@content;
+	}
+}
+@mixin bigquery($media) {
+	@media screen and (min-width: $media) {
+		@content;
+	}
+}
+
+/* global style */
+
 body {
 	box-sizing: border-box;
 }
-
-.top-info {
-	padding: 0.2rem 2rem;
-}
-.info {
-	cursor: pointer;
-	transition: var(--primary-transition);
-}
-.top-contact {
-	padding-left: 0.5rem;
-}
-.top-social {
-	padding-left: 0.5rem;
-	font-size: 1.3rem;
+// top info
+.container-fluid {
+	padding: 1rem 2rem 2rem;
 	color: white;
-	transition: var(--primary-transition);
+	z-index: 15;
+	.row {
+		div {
+			padding-bottom: 0.6rem;
+		}
+	}
+	.info {
+		cursor: pointer;
+		font-size: 1rem;
+		transition: $primary-transition;
+		&:hover {
+			color: $primary-color;
+		}
+		i {
+			padding-right: 0.4rem;
+		}
+	}
+	.top-social {
+		padding-left: 0.6rem;
+		font-size: 1.4rem;
+		color: white;
+		cursor: pointer;
+		transition: $primary-transition;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+	.top-contact:nth-child(2) {
+		letter-spacing: 0.1rem;
+	}
 }
-.info:hover,
-.top-social:hover {
-	color: var(--primary-color);
-	transform: scale(1.1);
-}
+// end top info
 
-.logo {
-	width: 10rem;
-	height: 5rem;
-}
-.navbar-nav li {
-	padding-right: 0.7rem;
-}
-.navbar-dark .navbar-nav .navbar-link {
-	color: white;
-	padding-top: 0.8rem;
-}
-
-.nav-link.active,
-.nav-link:hover {
-	color: rgb(206, 179, 30);
-}
-
-/* navbar */
+// Navbar
 .navbar {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 0.9rem;
-	letter-spacing: 0.1rem;
-	background: rgba(0, 0, 0, 0.5) !important;
+	padding-right: 2rem;
+	font-family: $title-font;
+	font-size: 1.1rem;
+	z-index: 10;
+	margin-top: -2rem;
+	// background: transparent !important;
+	// border-color: transparent !important;
+
+	.logo {
+		height: 60px;
+		margin-top: -1rem;
+		@include smallquery(768px) {
+			width: 120px;
+		}
+	}
+	.navbar-toggler {
+		outline: none;
+		border: none;
+		font-size: 1.6rem;
+	}
+	.nav-link {
+		margin-left: 1rem;
+		color: white !important;
+		transition: $primary-transition;
+		letter-spacing: 0.1rem;
+		&:active,
+		&:hover {
+			color: $primary-color !important;
+			border-bottom: 2px solid $primary-color;
+			@include smallquery(768px) {
+				border-bottom: none;
+				margin-bottom: 1.2rem 0;
+			}
+		}
+	}
+	.cart {
+		color: $primary-color;
+		font-size: 1.5rem;
+		padding-left: 3rem;
+	}
 }
-// carousel section
-.carousel-inner {
-	height: 100vh;
+
+// End navbar
+
+// Carousel style
+.carousel {
+	margin-bottom: 5rem;
+	.carousel-item {
+		height: 70vh;
+		min-height: 350px;
+		background: no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.carousel-caption {
+		padding-bottom: 12rem;
+		@include smallquery(600px) {
+			padding-bottom: 6rem;
+			h3 {
+				line-height: 1.7rem;
+			}
+		}
+	}
+	.carousel-indicators {
+		margin-bottom: 3rem;
+		li {
+			height: 15px;
+			width: 15px;
+			border-radius: 50%;
+			color: white;
+		}
+	}
+
+	.nom {
+		font-size: 3rem;
+		color: rgb(46, 173, 95);
+	}
+	.description {
+		font-size: 1.3rem;
+		letter-spacing: 0.2rem;
+		padding-top: 0.7rem;
+	}
+	.myBtn {
+		width: 200px;
+		margin-top: 1.3rem;
+		color: rgb(37, 2, 2);
+		background-color: lighten($primary-color, 15%);
+		border: lighten($primary-color, 15%);
+		font-size: 1.5rem;
+		letter-spacing: $spacing;
+		transition: $primary-transition;
+		outline: none;
+		&:hover {
+			background-color: darken($primary-color, 15%);
+			border: darken($primary-color, 15%);
+			color: white;
+		}
+	}
 }
-//
+// produsts-section
+.product-section {
+	margin-top: 4rem;
+	.product-title {
+		text-transform: uppercase;
+		font-family: $title-font;
+		font-weight: 600;
+		font-size: 2rem;
+	}
+}
