@@ -171,4 +171,17 @@ body {
 		font-size: 2rem;
 		margin-bottom: 4rem;
 	}
+	.card {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.card:nth-child(1) {
+		height: 500px;
+		padding-top: 180px;
+	}
+	.btnCard {
+		@extend .myBtn;
+		width: 120px;
+	}
 }

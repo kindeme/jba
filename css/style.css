@@ -92,7 +92,7 @@ body {
     font-size: 1.3rem;
     letter-spacing: 0.2rem;
     padding-top: 0.7rem; }
-  .carousel .myBtn {
+  .carousel .myBtn, .carousel .product-section .btnCard, .product-section .carousel .btnCard {
     width: 200px;
     margin-top: 1.3rem;
     color: #250202;
@@ -102,7 +102,7 @@ body {
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
     outline: none; }
-    .carousel .myBtn:hover {
+    .carousel .myBtn:hover, .carousel .product-section .btnCard:hover, .product-section .carousel .btnCard:hover {
       background-color: #917217;
       border: #917217;
       color: white; }
@@ -113,4 +113,14 @@ body {
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     font-weight: 600;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-bottom: 4rem; }
+  .product-section .card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .product-section .card:nth-child(1) {
+    height: 500px;
+    padding-top: 180px; }
+  .product-section .btnCard {
+    width: 120px; }
