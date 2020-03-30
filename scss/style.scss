@@ -223,7 +223,6 @@ body {
 .product-list {
 	background-color: #f2f2f2;
 	position: relative;
-
 	h1 {
 		font-family: "Montserrat";
 	}
@@ -238,42 +237,42 @@ body {
 			background-repeat: no-repeat;
 		}
 	}
-}
-// footer
-.footer {
-	padding-top: 2rem;
-}
-.footer-title {
-	padding-bottom: 1rem;
-}
-.footer-text,
-.footer-links {
-	font-weight: lighter;
-	text-align: center;
-	span {
-		color: $primary-color;
-		font-size: 1.3rem;
+	// footer
+	.footer {
+		padding-top: 2rem;
 	}
-}
-.footer-address {
-	font-weight: lighter;
-	text-align: center;
-	h6 {
-		padding-bottom: 0.7rem;
+	.footer-title {
+		padding-bottom: 1rem;
+	}
+	.footer-text,
+	.footer-links {
+		font-weight: lighter;
+		text-align: center;
 		span {
-			padding-left: 0.7rem;
+			color: $primary-color;
+			font-size: 1.3rem;
 		}
 	}
-}
-.footer-links {
-	list-style-type: none;
-	li {
-		a {
-			color: white;
-			text-decoration: none;
-			transition: $primary-transition;
-			&:hover {
-				color: $primary-color !important;
+	.footer-address {
+		font-weight: lighter;
+		text-align: center;
+		h6 {
+			padding-bottom: 0.7rem;
+			span {
+				padding-left: 0.7rem;
+			}
+		}
+	}
+	.footer-links {
+		list-style-type: none;
+		li {
+			a {
+				color: white;
+				text-decoration: none;
+				transition: $primary-transition;
+				&:hover {
+					color: $primary-color !important;
+				}
 			}
 		}
 	}
