@@ -223,56 +223,64 @@ body {
 .product-list {
 	background-color: #f2f2f2;
 	position: relative;
-	h1 {
-		font-family: "Montserrat";
+}
+h1 {
+	font-family: "Montserrat";
+}
+
+.carousel-item {
+	.col,
+	.col-sm,
+	.col-md {
+		margin: 8px;
+		height: 300px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
-	.carousel-item {
-		.col,
-		.col-sm,
-		.col-md {
-			margin: 8px;
-			height: 300px;
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
+}
+// footer
+.footer {
+	padding-top: 2rem;
+}
+.footer-title {
+	padding-bottom: 1rem;
+}
+.footer-links {
+	font-weight: lighter;
+	text-align: center;
+	span {
+		color: $primary-color;
+		font-size: 1.3rem;
 	}
-	// footer
-	.footer {
-		padding-top: 2rem;
+}
+.footer-text {
+	font-weight: lighter;
+	span {
+		color: $primary-color;
+		font-size: 1.3rem;
 	}
-	.footer-title {
-		padding-bottom: 1rem;
-	}
-	.footer-text,
-	.footer-links {
-		font-weight: lighter;
-		text-align: center;
+}
+.footer-address {
+	font-weight: lighter;
+	text-align: center;
+	h6 {
+		padding-bottom: 0.7rem;
 		span {
-			color: $primary-color;
-			font-size: 1.3rem;
+			padding-left: 0.7rem;
 		}
 	}
-	.footer-address {
-		font-weight: lighter;
-		text-align: center;
-		h6 {
-			padding-bottom: 0.7rem;
-			span {
-				padding-left: 0.7rem;
-			}
-		}
-	}
-	.footer-links {
-		list-style-type: none;
-		li {
-			a {
-				color: white;
-				text-decoration: none;
-				transition: $primary-transition;
-				&:hover {
-					color: $primary-color !important;
-				}
+}
+.footer-links {
+	list-style-type: none;
+	li {
+		a {
+			color: white;
+			font-size: 1rem;
+			text-decoration: none;
+			transition: $primary-transition;
+			&:hover {
+				color: $primary-color !important;
 			}
 		}
 	}
