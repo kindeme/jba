@@ -1,4 +1,5 @@
 /* global style */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300");
 
 $primary-color: #d3a621;
 $primary-transition: all 0.5s ease;
@@ -25,7 +26,6 @@ body {
 .container-fluid {
 	padding: 1rem 2rem 2rem;
 	color: white;
-	z-index: 15;
 	.row {
 		div {
 			padding-bottom: 0.6rem;
@@ -125,19 +125,11 @@ body {
 			}
 		}
 	}
-	.carousel-indicators {
-		margin-bottom: 3rem;
-		li {
-			height: 15px;
-			width: 15px;
-			border-radius: 50%;
-			color: white;
-		}
-	}
 
 	.nom {
 		font-size: 3rem;
 		color: rgb(46, 173, 95);
+		padding-left: 1rem;
 	}
 	.description {
 		font-size: 1.3rem;
@@ -170,18 +162,127 @@ body {
 		font-weight: 600;
 		font-size: 2rem;
 		margin-bottom: 4rem;
+		letter-spacing: 0.1rem;
 	}
 	.card {
+		padding: 1rem 1rem 0 1rem;
+		border: none;
+		background-color: rgb(240, 232, 232);
+		margin-bottom: 1.6rem;
+		transition: $primary-transition;
+		&:hover {
+			-webkit-box-shadow: 3px 2px 18px -6px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 3px 2px 18px -6px rgba(0, 0, 0, 0.75);
+			box-shadow: 3px 2px 18px -6px rgba(0, 0, 0, 0.75);
+		}
+	}
+	.card-title {
+		padding-bottom: 1rem;
+		font-family: $title-font;
+		font-weight: 400;
+	}
+	.product-card {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
-	.card:nth-child(1) {
-		height: 500px;
-		padding-top: 180px;
-	}
 	.btnCard {
-		@extend .myBtn;
-		width: 120px;
+		font-size: 1.1rem;
+		color: inherit;
+		font-weight: 400;
+		text-decoration: none;
+		transition: $primary-transition;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+// Product list carousel
+.title {
+	margin-top: 4rem;
+	.product-title {
+		text-transform: uppercase;
+		font-family: $title-font;
+		font-weight: 600;
+		font-size: 2rem;
+		margin-bottom: 4rem;
+		letter-spacing: 0.1rem;
+		span {
+			padding-left: 0.7rem;
+		}
+	}
+}
+.hauteur {
+	margin-bottom: 0;
+	height: 300px;
+}
+.product-slide {
+	padding-top: 1rem;
+}
+.product-list {
+	background-color: #f2f2f2;
+	position: relative;
+
+	h1 {
+		font-family: "Montserrat";
+	}
+	// .carousel-nav-icon {
+	// 	height: 48px;
+	// 	width: 48px;
+	// 	svg {
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		transform: translateY(-50%);
+	// 	}
+	// }
+	.carousel-item {
+		.col,
+		.col-sm,
+		.col-md {
+			margin: 8px;
+			height: 300px;
+			background-size: cover;
+			background-position: center center;
+		}
+	}
+}
+// footer
+.footer {
+	padding-top: 2rem;
+}
+.footer-title {
+	padding-bottom: 1rem;
+}
+.footer-text,
+.footer-links {
+	font-weight: lighter;
+	text-align: center;
+	span {
+		color: $primary-color;
+		font-size: 1.3rem;
+	}
+}
+.footer-address {
+	font-weight: lighter;
+	text-align: center;
+	h6 {
+		padding-bottom: 0.7rem;
+		span {
+			padding-left: 0.7rem;
+		}
+	}
+}
+.footer-links {
+	list-style-type: none;
+	li {
+		a {
+			color: white;
+			text-decoration: none;
+			transition: $primary-transition;
+			&:hover {
+				color: $primary-color !important;
+			}
+		}
 	}
 }
