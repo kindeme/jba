@@ -7,7 +7,10 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"scss": "node-sass scss -o css",
 		"watch:scss": "onchange \"scss/*.scss\" -- npm run scss",
-		"start": "npm run watch:scss"
+		"start": "npm run watch:scss",
+		"copyfiles": "copyfiles -f image/* docs/image",
+		"usemin": "usemin contact.html -d docs --htmlmin -o docs/contact.html && usemin bebe.html -d docs --htmlmin -o docs/bebe.html && usemin index.html -d docs --htmlmin -o docs/index.html && usemin bijoux.html -d docs --htmlmin -o docs/bijoux.html && usemin chapeaux.html -d docs --htmlmin -o docs/chapeaux.html",
+		"build": "npm run copyfiles && npm run usemin"
 	},
 	"repository": {
 		"type": "git",
@@ -26,6 +29,8 @@
 		"popper.js": "^1.16.1"
 	},
 	"devDependencies": {
-		"node-sass": "^4.13.1"
+		"copyfiles": "^2.0.0",
+		"node-sass": "^4.13.1",
+		"parallelshell": "^3.0.2"
 	}
 }
