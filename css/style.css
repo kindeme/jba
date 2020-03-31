@@ -228,3 +228,43 @@ h1 {
     @media screen and (max-width: 600px) {
       .hero-tissu .hero-title {
         font-size: 2.2rem; } }
+
+.hero-bijoux {
+  width: 100%;
+  height: 40vh;
+  background-image: url("../image/bhero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; }
+  .hero-bijoux .hero-title {
+    font-size: 5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; }
+    @media screen and (max-width: 600px) {
+      .hero-bijoux .hero-title {
+        font-size: 2.2rem; } }
+
+.hero-chapo {
+  width: 100%;
+  height: 40vh;
+  background-image: url("../image/chapohero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; }
+  .hero-chapo .hero-title {
+    font-size: 5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green; }
+    @media screen and (max-width: 600px) {
+      .hero-chapo .hero-title {
+        font-size: 2.2rem; } }

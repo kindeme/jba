@@ -98,6 +98,14 @@ body {
 		border: none;
 		font-size: 1.6rem;
 	}
+	// .active {
+	// 	color: $primary-color !important;
+	// 	// border-bottom: 2px solid $primary-color;
+	// 	@include smallquery(768px) {
+	// 		border-bottom: none;
+	// 		margin-bottom: 1.2rem 0;
+	// 	}
+	// }
 	.nav-link {
 		margin-left: 1rem;
 		color: white !important;
@@ -311,5 +319,23 @@ h1 {
 	.hero-title {
 		@include herotitle;
 		color: white;
+	}
+}
+// bijoux.html
+.hero-bijoux {
+	@include heroimage(url("../image/bhero.jpg"));
+	position: relative;
+	.hero-title {
+		@include herotitle;
+		color: white;
+	}
+}
+// chapeaux
+.hero-chapo {
+	@include heroimage(url("../image/chapohero.jpg"));
+	position: relative;
+	.hero-title {
+		@include herotitle;
+		color: green;
 	}
 }
