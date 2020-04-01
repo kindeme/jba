@@ -211,6 +211,7 @@ body {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		height: 300px;
 	}
 	.btnCard {
 		font-size: 1.1rem;
@@ -248,7 +249,7 @@ body {
 }
 .product-list {
 	background-color: #f2f2f2;
-	position: relative;
+	height: auto;
 }
 h1 {
 	font-family: "Montserrat";
@@ -274,7 +275,7 @@ h1 {
 }
 .footer-links {
 	font-weight: lighter;
-	text-align: center;
+	text-align: left;
 	span {
 		color: $primary-color;
 		font-size: 1.3rem;
