@@ -9,7 +9,7 @@
 		"watch:scss": "onchange \"scss/*.scss\" -- npm run scss",
 		"start": "npm run watch:scss",
 		"copyfiles": "copyfiles -f image/* docs/image",
-		"usemin": "usemin contact.html -d docs --htmlmin -o docs/contact.html && usemin bebe.html -d docs --htmlmin -o docs/bebe.html && usemin index.html -d docs --htmlmin -o docs/index.html && usemin bijoux.html -d docs --htmlmin -o docs/bijoux.html && usemin chapeaux.html -d docs --htmlmin -o docs/chapeaux.html",
+		"usemin": "usemin contact.html -d docs --htmlmin -o docs/contact.html && usemin bebe.html -d docs --htmlmin -o docs/bebe.html && usemin index.html -d docs --htmlmin -o docs/index.html && usemin bijoux.html -d docs --htmlmin -o docs/bijoux.html && usemin chapeaux.html -d docs --htmlmin -o docs/chapeaux.html && usemin tissus.html -d docs --htmlmin -o docs/tissus.html",
 		"build": "npm run copyfiles && npm run usemin"
 	},
 	"repository": {
